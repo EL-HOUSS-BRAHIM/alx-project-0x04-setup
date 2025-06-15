@@ -1,17 +1,15 @@
-// For pages/index.tsx
+import { ReactNode } from "react"
+
 export interface PageRouteProps {
-  pageRoute: string;
+  pageRoute: string
 }
-
-// For components/common/Button.tsx
 export interface ButtonProps {
-  buttonLabel: string;
-  buttonSize?: string;
-  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green';
-  action?: () => void;
+    buttonLabel: string
+    buttonSize?: string
+    buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green'
+    action?: ( )=> void
 }
 
-// For components/layouts/Layout.tsx
 export interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
